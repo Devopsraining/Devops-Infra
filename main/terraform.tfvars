@@ -1,0 +1,44 @@
+project_id = "devops-497707"
+region = "us-central1"
+zone = "us-central1-a"
+network_name = "devops-network"
+subnet_cidr = "10.0.0.0/16"
+ansible_worker_count = 2
+target_count = 6
+ansible_machine_type = "e2-medium"
+target_machine_type = "e2-small"
+image_family = "ubuntu-2204-lts"
+image_project = "ubuntu-os-cloud"
+ssh_keys = "ubuntu:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDkR+l7FDS7EI272qIAIlpmL/iE1s04IV5zSETiikCxbmqrUb0DUTtMxX5ijtpk5wN6cVyHhbIaVbOAYkkIi9vGY+fTn+sQ8e2/6FiCYnmFZLY4uFnv3cZ669UBs0KD77Z5oj1fGaRQy6v0SuzgsqTfPSejB+d6/ECbdRRq0szqTXDuOwGlHsScqLEffXxM1R7GiwfEyg17jFuzVRmX6CFkJfC1qb1Jbdq9y7tJDplOACPmuC8uO2T8+Xv/EQlurzwo+KnX+xlp2cFKrvvGSgAMJf2rS286NdvgDoNXcUupxzMkbyUqbfCfHOApd+9xN3WKVnVuCOrwyDfazruHHqzh rsa-key-20260602"
+master_private_key = <<EOF
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABFwAAAAdz
+c2gtcnNhAAAAAwEAAQAAAQEA5EfpexQ0uxCNu9qiACJaZi/4hNbNOCFec0hE4opA
+sW5qq1G9A1E7TMV+Yo7aZOcDenFch4WyGlWzgGJJCIvbxmPn05/rEPHtv+hYgmJ5
+hWS2OLhZ793GeuvVAbNCg++2eaI9XxmkUMur9Ers4LKk3z0nowfnevxAm3UUatLM
+6k1w7jsBpR7EnKixH318TNUexosHxMoNe4xbs1UZl+ghZCXwtam9SW3avcu7SQ6Z
+TgAj5rgvLjtk/Pl7/xEJbq88KPip1/sZadnBSq77xkoADCX9q0tvOjXb4A6DV3FL
+qcczJG8lKm3wnxzgKXfvcTd1ilZ1bgjq8Mg32s67hx6s4QAAA9CfVFlwn1RZcAAA
+AAdzc2gtcnNhAAABAQDkR+l7FDS7EI272qIAIlpmL/iE1s04IV5zSETiikCxbmqr
+Ub0DUTtMxX5ijtpk5wN6cVyHhbIaVbOAYkkIi9vGY+fTn+sQ8e2/6FiCYnmFZLY4
+uFnv3cZ669UBs0KD77Z5oj1fGaRQy6v0SuzgsqTfPSejB+d6/ECbdRRq0szqTXDu
+OwGlHsScqLEffXxM1R7GiwfEyg17jFuzVRmX6CFkJfC1qb1Jbdq9y7tJDplOACPm
+uC8uO2T8+Xv/EQlurzwo+KnX+xlp2cFKrvvGSgAMJf2rS286NdvgDoNXcUupxzMk
+byUqbfCfHOApd+9xN3WKVnVuCOrwyDfazruHHqzhAAAAAwEAAQAAAQEAwftBse7H
+qDY22my8wLRwcOlOm0MUfCAO7JN6xa6JrryPNClvHkSGyYQBE6skdh3AXOm7oQXB
+BJPSxsO+H98I0JrQwonf7DRIvYyouZMIhIvCNIyjECs6n/WKubkkSo0GWHG/CPL3
+KBkKc7q/c2kapQCIkAcFcwKru+5PfT7IFkhBSfuEdmzqfc5W7OMPo6zJkXPMIYkW
+kWmGCoat5Ma6FiqXsDtE5S2n/jmBA/AQIV39hXdVSbY8s2wNP3UJ/EfRxcR7mI5P
+sTebF8BxfuUWwKJ//gHZ13++Xgk4KqSz3GJnRu4fhgZFxAGB8r/6FnIOBnLbtnp9
+shKa0j6BhwGJyQAAAIBTkPfkuQmWBpO0W3nP5Y67eEdTR0R5fX1gphRXkT0i6+Px
+5WmF90d6WFhbqB3wPFkSUliIR+w5PVBmRIrpaYT4inktm3h8Nso4e8MkHzi9FHnQ
+isQnroiMMQMziNY2na84ctHmBiCAlIuOVQpD2h5yjL5xV+DAvrZTv75BExGe1QAA
+AIEA9Z1tS2JpQta4fM8QgyFE4/pV9Ilg9UzDLrVInsIXnQRxTZBIjLLniMtlq46i
+0QzTprbxbViiYbNhfQT06/jHy9ESSHF//fevOkQyg7JJyPb/37aAurBsRQi63Ggd
+LE80RqfQ5IFZSUwpGPkdSceFB+HqRJaCF0+eZcOixvZMYyMAAACBAO3u29vtegKL
+98bR9N0d3NzyX53UuExT0V6xja18cHA8RRAGGR1jrkL2K6EjnsLjV4CjBCGVHWta
+ZX3cuavDuuUWZwgUCCEHWzmuZyusAfRT+4BH8zRTPiqmavwiTdAwy9pgz1FKkeH1
+4yM58YpRl7WKoXx5Be3y248xYIIDiUIrAAAAEHJzYS1rZXktMjAyNjA2MDIBAgME
+BQYHCAkK
+-----END OPENSSH PRIVATE KEY-----
+EOF
