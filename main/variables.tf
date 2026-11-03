@@ -1,6 +1,6 @@
 variable "project_id" {
   description = "GCP project ID where VMs will be created"
-  default     = "devops-497707"
+  default     = "devops-513617"
 }
 
 variable "region" {
@@ -68,7 +68,7 @@ variable "master_private_key" {
 variable "startup_script" {
   description = "Startup script for bootstrapping VMs"
   type        = string
-  default = <<-EOF
+  default     = <<-EOF
     #!/bin/bash
     set -e
     apt-get update -y

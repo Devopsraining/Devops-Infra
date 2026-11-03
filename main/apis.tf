@@ -3,15 +3,15 @@ resource "google_project_service" "required_apis" {
     "cloudbuild.googleapis.com",
     "aiplatform.googleapis.com",
     "cloudfunctions.googleapis.com",
-    "run.googleapis.com",         # Cloud Build
-    "cloudkms.googleapis.com",            # Cloud KMS
-    "container.googleapis.com",          # GKE
-    "compute.googleapis.com",            # Networking / LB
-    "iam.googleapis.com",                # IAM
+    "run.googleapis.com",       # Cloud Build
+    "cloudkms.googleapis.com",  # Cloud KMS
+    "container.googleapis.com", # GKE
+    "compute.googleapis.com",   # Networking / LB
+    "iam.googleapis.com",       # IAM
     "cloudresourcemanager.googleapis.com",
-    "dns.googleapis.com",                # Private DNS
-    "storage.googleapis.com",             # GCS (tfstate)
-    "artifactregistry.googleapis.com"     # Artifact Registry
+    "dns.googleapis.com",             # Private DNS
+    "storage.googleapis.com",         # GCS (tfstate)
+    "artifactregistry.googleapis.com" # Artifact Registry
   ])
 
   project = var.project_id

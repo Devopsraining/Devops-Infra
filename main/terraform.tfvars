@@ -1,16 +1,16 @@
-project_id = "devops-497707"
-region = "us-central1"
-zone = "us-central1-a"
-network_name = "devops-network"
-subnet_cidr = "10.0.0.0/16"
+project_id           = "devops-513617"
+region               = "us-central1"
+zone                 = "us-central1-a"
+network_name         = "devops-network"
+subnet_cidr          = "10.0.0.0/16"
 ansible_worker_count = 2
-target_count = 6
+target_count         = 6
 ansible_machine_type = "e2-medium"
-target_machine_type = "e2-small"
-image_family = "ubuntu-2204-lts"
-image_project = "ubuntu-os-cloud"
-ssh_keys = "ubuntu:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDkR+l7FDS7EI272qIAIlpmL/iE1s04IV5zSETiikCxbmqrUb0DUTtMxX5ijtpk5wN6cVyHhbIaVbOAYkkIi9vGY+fTn+sQ8e2/6FiCYnmFZLY4uFnv3cZ669UBs0KD77Z5oj1fGaRQy6v0SuzgsqTfPSejB+d6/ECbdRRq0szqTXDuOwGlHsScqLEffXxM1R7GiwfEyg17jFuzVRmX6CFkJfC1qb1Jbdq9y7tJDplOACPmuC8uO2T8+Xv/EQlurzwo+KnX+xlp2cFKrvvGSgAMJf2rS286NdvgDoNXcUupxzMkbyUqbfCfHOApd+9xN3WKVnVuCOrwyDfazruHHqzh rsa-key-20260602"
-master_private_key = <<EOF
+target_machine_type  = "e2-small"
+image_family         = "ubuntu-2204-lts"
+image_project        = "ubuntu-os-cloud"
+ssh_keys             = "ubuntu:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDkR+l7FDS7EI272qIAIlpmL/iE1s04IV5zSETiikCxbmqrUb0DUTtMxX5ijtpk5wN6cVyHhbIaVbOAYkkIi9vGY+fTn+sQ8e2/6FiCYnmFZLY4uFnv3cZ669UBs0KD77Z5oj1fGaRQy6v0SuzgsqTfPSejB+d6/ECbdRRq0szqTXDuOwGlHsScqLEffXxM1R7GiwfEyg17jFuzVRmX6CFkJfC1qb1Jbdq9y7tJDplOACPmuC8uO2T8+Xv/EQlurzwo+KnX+xlp2cFKrvvGSgAMJf2rS286NdvgDoNXcUupxzMkbyUqbfCfHOApd+9xN3WKVnVuCOrwyDfazruHHqzh rsa-key-20260602"
+master_private_key   = <<EOF
 -----BEGIN OPENSSH PRIVATE KEY-----
 b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABFwAAAAdz
 c2gtcnNhAAAAAwEAAQAAAQEA5EfpexQ0uxCNu9qiACJaZi/4hNbNOCFec0hE4opA
