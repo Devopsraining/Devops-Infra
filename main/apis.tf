@@ -9,6 +9,7 @@ resource "google_project_service" "required_apis" {
     "compute.googleapis.com",   # Networking / LB
     "iam.googleapis.com",       # IAM
     "cloudresourcemanager.googleapis.com",
+    "orgpolicy.googleapis.com",
     "dns.googleapis.com",             # Private DNS
     "storage.googleapis.com",         # GCS (tfstate)
     "artifactregistry.googleapis.com" # Artifact Registry
@@ -18,4 +19,17 @@ resource "google_project_service" "required_apis" {
   service = each.key
 
   disable_on_destroy = false
+}
+
+resource "google_project_organization_policy" "allow_service_account_key_creation" {
+  project    = var.project_id
+  constraint = "iam.disableServiceAccountKeyCreation"
+
+  boolean_policy {
+    enforced = false
+  }
+
+  depends_on = [
+    google_project_service.required_apis["orgpolicy.googleapis.com"]
+  ]
 }
